@@ -1,7 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.sugarlabs.Story" version="0.0.1"
-    xmlns="http://www.w3.org/ns/widgets"
-    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="org.sugarlabs.Story" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Story</name>
     <description>
          Write stories based on random images.
@@ -13,22 +11,16 @@
     <plugin name="cordova-plugin-whitelist" version="1" />
     <access origin="*" />
     <icon src="res/icon.png" />
-
-    <preference name="DisallowOverscroll" value="true"/>
-    <preference name="permissions" value="none"/>
-    <preference name="fullscreen" value="true"/>
-    <preference name="uiwebviewbounce" value="false"/>
-    <preference name="webviewbounce" value="false"/>
-    <preference name="disallowoverscroll" value="true"/>
-    <preference name="android-minSdkVersion" value="14"/>
-    <preference name="orientation" value="portrait"/>
-
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="permissions" value="none" />
+    <preference name="fullscreen" value="true" />
+    <preference name="uiwebviewbounce" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="disallowoverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="orientation" value="portrait" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-    <!-- allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" / -->
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
@@ -36,4 +28,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <preference name="xwalkVersion" value="14+" />
+    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
+    <preference name="xwalkMode" value="embedded" />
 </widget>
