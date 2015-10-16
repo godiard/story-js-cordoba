@@ -35,6 +35,10 @@
                         {
                             "xml": "<feature name=\"Canvas2ImagePlugin\"><param name=\"android-package\" value=\"org.devgeeks.Canvas2ImagePlugin.Canvas2ImagePlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"FileOpener\"><param name=\"android-package\" value=\"com.phonegap.plugins.fileopener.FileOpener\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -70,6 +74,9 @@
             "PACKAGE_NAME": "org.sugarlabs.Story"
         },
         "org.devgeeks.Canvas2ImagePlugin": {
+            "PACKAGE_NAME": "org.sugarlabs.Story"
+        },
+        "com.phonegap.plugins.fileopener": {
             "PACKAGE_NAME": "org.sugarlabs.Story"
         }
     },
