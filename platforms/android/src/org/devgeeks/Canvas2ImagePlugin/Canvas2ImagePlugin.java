@@ -89,8 +89,10 @@ public class Canvas2ImagePlugin extends CordovaPlugin {
 			 * 2.2
 			 */
 			if (check >= 1) {
-				folder = Environment
-					.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+				// trato de grabar en /sdcard/ceibal/Mis descargas
+				String ceibalDownloadDir = "/sdcard/ceibal/Mis Descargas";
+				Log.i("CEIBAL DOWNLOAD DIRECTORY", ceibalDownloadDir);
+				folder = new File(ceibalDownloadDir);
 				
 				if(!folder.exists()) {
 					folder.mkdirs();
